@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="EVCap: Retrieval-Augmented Image Captioning with External Visual-Name Memory for Open-World Comprehension.">
+  <meta name="keywords" content="Retrieval-Augmented, Caption, Open-World Comprehension">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EVCap: Retrieval-Augmented Image Captioning with External Visual-Name Memory for Open-World Comprehension</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title" style="font-size: 32px; line-height: 42px;">
+              <span style="font-size: 38px; display: block; margin-bottom: 8px;"><b>EVCap</b>:</span>
+              Retrieval-Augmented Image Captioning with External Visual-Name Memory for Open-World Comprehension
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://jiaxuan-li.github.io/">Jiaxuan Li</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://vmdlab.github.io/">MinhDuc Vo</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="http://research.nii.ac.jp/~sugimoto/index.html">Akihiro Sugimoto</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://www.nlab.ci.i.u-tokyo.ac.jp/index-e.html">Hideki Nakayama</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The University of Tokyo,</span>
+            <span class="author-block"><sup>2</sup>National Institute of Informatics</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a 
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a 
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a 
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a 
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Large language models (LLMs)-based image captioning has the capability of describing objects 
+            not explicitly observed in training data; yet novel objects occur frequently, necessitating 
+            the requirement of sustaining up-to-date object knowledge for open-world comprehension. 
+          </p>
+          <p>
+            Instead of relying on large amounts of data and scaling up network parameters, 
+            we introduce a highly effective retrieval-augmented image captioning method that prompts LLMs 
+            with object names retrieved from External Visual--name memory (EVCap).
+            We build ever-changing object knowledge memory using objects' visuals and names, enabling us to
+            (i) update the memory at a minimal cost and 
+            (ii) effortlessly augment LLMs with retrieved object names by utilizing a lightweight and fast-to-train model. 
+            Our model, which was trained only on the COCO dataset, 
+            can adapt to out-of-domain without requiring additional fine-tuning or re-training. 
+          </p>
+          <p>
+            Our comprehensive experiments conducted on various benchmarks and synthetic commonsense-violating data demonstrate that EVCap, 
+            comprising solely 3.97M trainable parameters, exhibits superior performance compared to other methods of equivalent model size scale. 
+            Notably, it achieves competitive performance against specialist SOTAs with an enormous number of parameters.
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Model</h2>
+          <div class="content has-text-justified">
+            <p>
+            EVCap consists of an external visual-name memory with image embeddings and object names (upper), a frozen ViT and Q-Former equipped with trainable image query tokens, an attentive fusion module developed by a customized
+            frozen Q-Former and trainable object name query tokens, and a frozen LLM with a trainable linear layer (lower).
+            </p>
+          </div>
+          <img src="./static/images/model.png"
+          class="interpolation-image"
+          alt="Interpolate start reference image."
+          width="75%"/>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      Coming soon~
+    </code></pre>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgement</h2>
+    <p>
+      This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+    </p>
+  </div>
+</section>
+
+
+</body>
+</html>
