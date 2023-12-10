@@ -1,5 +1,5 @@
 ## EVCap: Retrieval-Augmented Image Captioning with External Visual-Name Memory for Open-World Comprehension
-<a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Li_Partition-And-Debias_Agnostic_Biases_Mitigation_via_a_Mixture_of_Biases-Specific_Experts_ICCV_2023_paper.pdf"><img src="https://img.shields.io/static/v1?label=Paper&message=PnD&color=red" height=20.5></a> 
+<a href="https://arxiv.org/pdf/2311.15879.pdf"><img src="https://img.shields.io/static/v1?label=Paper&message=EVCap&color=red" height=20.5></a> 
 <a href="https://arxiv.org/abs/2311.15879"><img src="https://img.shields.io/badge/arXiv-2308.10005-b31b1b.svg" height=20.5></a>
 <a href="https://jiaxuan-li.github.io/EVCap/"><img src="https://img.shields.io/badge/WEB-Page-159957.svg" height=20.5></a>
 
