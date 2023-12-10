@@ -16,8 +16,10 @@
 
 
 ## Training
+coming soon~
 
 ## Evaluation
+coming soon~
 
 ## Acknowledgements
 This repo is built on [MiniGPT4](https://github.com/Vision-CAIR/MiniGPT-4), we thank the authors for their great effort.
