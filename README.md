@@ -10,3 +10,25 @@
 > Large language models (LLMs)-based image captioning has the capability of describing objects not explicitly observed in training data; yet novel objects occur frequently, necessitating the requirement of sustaining up-to-date object knowledge for open-world comprehension. Instead of relying on large amounts of data and scaling up network parameters, we introduce a highly effective retrieval-augmented image captioning method that prompts LLMs with object names retrieved from External Visual-name memory (EVCAP). We build ever-changing object knowledge memory using objects’ visuals and names, enabling us to (i) update the memory at a minimal cost and (ii) effortlessly augment LLMs with retrieved object names utilizing a lightweight and fast-to-train model. Our model, which was trained only on the COCO dataset, can be adapted to out-domain data without additional fine-tuning or retraining. Our comprehensive experiments conducted on various benchmarks and synthetic commonsense-violating data demonstrate that EVCAP, comprising solely 3.97M trainable parameters, exhibits superior performance compared to other methods of equivalent model size scale. Notably, it achieves competitive performance against specialist SOTAs with an enormous number of parameters.
 
 <div align=center><img width="80%" src="./static/images/model.png"/></div>
+
+
+## Setup
+
+
+## Training
+
+## Evaluation
+
+## Acknowledgements
+This repo is built on [MiniGPT4](https://github.com/Vision-CAIR/MiniGPT-4), we thank the authors for their great effort.
+
+## Citation
+If you find our work helpful for your research, please kindly consider citing:
+
+    @article{li2023evcap,
+      title={EVCap: Retrieval-Augmented Image Captioning with External Visual-Name Memory for Open-World Comprehension}, 
+      author={Jiaxuan Li and Duc Minh Vo and Akihiro Sugimoto and Hideki Nakayama},
+      journal={arXiv preprint arXiv:2311.15879},
+      year={2023},
+    }
+
