@@ -13,7 +13,7 @@
 
 
 ## Setup
-
+Install the required packages using conda with the provided [environment.yaml](environment.yaml) file.
 
 ## Training
 coming soon~
