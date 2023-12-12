@@ -22,7 +22,7 @@ coming soon~
 coming soon~
 
 ## Acknowledgements
-This repo is built on [MiniGPT4](https://github.com/Vision-CAIR/MiniGPT-4), we thank the authors for their great effort.
+This repo is built on [MiniGPT4](https://github.com/Vision-CAIR/MiniGPT-4) and [ViECap](https://github.com/FeiElysia/ViECap), we thank the authors for their great effort.
 
 ## Citation
 If you find our work helpful for your research, please kindly consider citing:
