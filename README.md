@@ -16,7 +16,7 @@
 Install the required packages using conda with the provided [environment.yaml](environment.yaml) file.
 
 ## Training
-coming soon~
+Train EVCap on the COCO dataset, using the [scripts/train_evcap.sh](scripts/train_evcap.sh) script.
 
 ## Evaluation
 coming soon~
