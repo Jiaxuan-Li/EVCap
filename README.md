@@ -16,10 +16,18 @@
 Install the required packages using conda with the provided [environment.yaml](environment.yaml) file.
 
 ## Training
-Train EVCap on the COCO dataset, using the [scripts/train_evcap.sh](scripts/train_evcap.sh) script.
+Train EVCap on the COCO training dataset, using the [scripts/train_evcap.sh](scripts/train_evcap.sh) script.
 
 ## Evaluation
-coming soon~
+Evaluate the trained EVCap on the COCO test set, NoCaps validation set, and Flickr30k test set, using the following script (```bash scripts/eval_evcap_*.sh eval_evcap_* n```), respectively:
+
+```
+bash scripts/eval_evcap_coco.sh eval_evcap_coco 0
+bash scripts/eval_evcap_nocaps.sh eval_evcap_nocaps 0
+bash scripts/eval_evcap_flickr30k.sh eval_evcap_flickr30k 0
+```
+
+where ```n``` denotes the ID of GPU used.
 
 ## Acknowledgements
 This repo is built on [MiniGPT4](https://github.com/Vision-CAIR/MiniGPT-4) and [ViECap](https://github.com/FeiElysia/ViECap), we thank the authors for their great effort.
